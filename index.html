@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en" dir="ltr" xmlns="http://www.w3.org/1999/html">
 
 <head>
     <meta charset="utf-8">
-    <title>Viacoin | The Future of Digital Currency.</title>
+    <title data-i18n="app-title">Viacoin | The Future of Digital Currency.</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 
     <link rel="stylesheet" href="css/reset.css" media="all">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/flexslider.css" media="all">
     <link rel="stylesheet" href="css/magnific-popup.css" media="all">
     <link rel="stylesheet" href="css/ut-responsive-grid.css" media="all">
     <link rel="stylesheet" href="css/style.css" media="all">
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic,300' rel='stylesheet' type='text/css'>
+    <link href='fonts.googleapis.com/css?family=Roboto:400,500,700,400italic,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 
     <!--[if lt IE 9]>
     <script src="js/html5.js"></script>
@@ -32,13 +33,23 @@
 
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="js//jquery.i18n.js"></script>
+	<script src="js/jquery.i18n.messagestore.js"></script>
+	<script src="js/jquery.i18n.fallbacks.js"></script>
+	<script src="js/jquery.i18n.parser.js"></script>
+	<script src="js/jquery.i18n.emitter.js"></script>
+    <script src="js/jquery.i18n.language.js"></script>
+    <script src="js/translations.js"></script>
     <script src="js/SmoothScroll.js"></script>
     <script src="js/modernizr.js"></script>
     <script src="js/device.min.js"></script>
     <script src="js/jquery.mb.YTPlayer.js"></script>
     <script>
+
         $().ready(function () {
+
+
             $(function () {
                 $(".player").mb_YTPlayer();
             });
@@ -61,12 +72,13 @@
                 <nav id="ut-navigation" class="grid-80 tablet-grid-80 hide-on-mobile">
                     <a class="selected" href="#top">Home</a>
                     <a href="#about-section">About</a>
-                    <a href="http://blog.viacoin.org/">Blog</a>
-                    <a href="#portfolio-section">Wallets</a>
+                    <a href="https://medium.com/@viacoin" target="_blank">Blog</a>
+                    <a href="https://telegram.me/viacoin" target="_blank">Telegram</a>
+                    <a href="#download">Wallets</a>
                     <a href="#service-section">Exchanges</a>
+                    <a href="https://www.litebit.eu/en/buy/viacoin" target="_blank">Buy directly</a>
                     <a href="#team-section">Resources</a>
-                    <a href="#social-section">Community</a>
-                    <a href="#contact-section">Contact</a>
+         
                 </nav>
             </div>
         </div>
@@ -95,7 +107,7 @@
                 </div>
 
                 <div class="grid-container">
-                    <span class="btn-holder"><a id="to-about-section" class="hero-btn"><i
+                    <span class="btn-holder"><a id="to-about-section" class="hero-btn" data-i18n="app-start-button"><i
                             class="fa fa-arrow-circle-down fa-lg"></i> Get Started</a></span>
                 </div>
 
@@ -121,8 +133,11 @@
             <!-- section header -->
             <div class="grid-70 prefix-15 mobile-grid-100 tablet-grid-100">
                 <header class="section-header">
-                    <h2 class="section-title" style="opacity: 1;"><span>Welcome to Viacoin</span></h2>
-                    <p class="section-slogan" style="opacity: 1;">The fast flexible currency for the digital age.</p>
+                    <h2 class="section-title" style="opacity: 1;"><span data-i18n="app-name">Welcome to Viacoin</span></h2>
+                    <p class="section-slogan" style="opacity: 1;" data-i18n="app-slogan2">The fast and flexible currency for the digital age.</p>
+                    <p class="section-slogan" style="opacity: 1;"><p><a href="https://github.com/viacoin/documents/raw/master/whitepapers/Viacoin_whitepaper.pdf" target="_blank" data-i18n="app-info-whitepaper">Viacoin whitepaper</a></p></p>
+                    <p class="section-slogan" style="opacity: 1;"><p><a href="https://viacoin.org/roadmap" target="_blank" data-i18n="app-info-roadmap">Roadmap 2017 (Finished. Roadmap 2018 will be released soon, styx to 2018)</a></p></p>
+                    <p class="section-slogan" style="opacity: 1;"><p><a href="https://bitcoinmagazine.com/articles/which-altcoins-are-implementing-segwit-1481577969/" target="_blank" data-i18n="app-info-magazine">Viacoin SegWit Bitcoin magazine [Dec 2016]</a></p></p>
                 </header>
             </div>
             <div class="grid-70 prefix-15 mobile-grid-100 tablet-grid-100">
@@ -131,16 +146,26 @@
             <!-- close section header -->
 
             <div class="grid-50 tablet-grid-100 mobile-grid-100 about-box" style="opacity: 1;">
-                <figure><i class="fa fa-university fa-2x about-icon"></i></figure>
+                <figure class="about-icon"><i class="fa fa-bolt fa-2x about-icon"></i></figure>
 
                 <div class="about-box" style="opacity: 1;">
-                    <h3>ClearingHouse</h3>
+                    <h3 data-i18n="app-info-bullet1-title">Fast Transactions</h3>
 
-                    <p>Decentralized settlement and meta transaction protocol.</p>
+                    <p data-i18n="app-info-bullet1-subtitle">25x faster than Bitcoin</p>
                 </div>
             </div>
 
             <div class="grid-50 tablet-grid-100 mobile-grid-100 about-box" style="opacity: 1;">
+                <figure><i class="fa fa-university fa-2x about-icon"></i></figure>
+
+                <div class="about-box" style="opacity: 1;">
+                    <h3 data-i18n="app-info-bullet2-title">ClearingHouse</h3>
+
+                    <p data-i18n="app-info-bullet2-subtitle">Decentralized settlement and meta transaction protocol</p>
+                </div>
+            </div>
+
+            <!-- div class="grid-50 tablet-grid-100 mobile-grid-100 about-box" style="opacity: 1;">
                 <figure class="about-icon"><i class="fa fa-cubes fa-2x about-icon"></i></figure>
 
                 <div class="about-box" style="opacity: 1;">
@@ -148,15 +173,15 @@
 
                     <p>Through Proof-of-Work mining and initial distribution.</p>
                 </div>
-            </div>
+            </div -->
 
             <div class="grid-50 tablet-grid-100 mobile-grid-100 about-box" style="opacity: 1;">
-                <figure class="about-icon"><i class="fa fa-bolt fa-2x about-icon"></i></figure>
+                <figure class="about-icon"><i class="fa fa-gavel fa-2x about-icon"></i></figure>
 
                 <div class="about-box" style="opacity: 1;">
-                    <h3>Fast Transactions</h3>
+                    <h3 data-i18n="app-info-bullet3-title">Blockchain Notary</h3>
 
-                    <p>25x faster than Bitcoin.</p>
+                    <p data-i18n="app-info-bullet3-subtitle">Proof-of-publication</p>
                 </div>
             </div>
 
@@ -164,15 +189,55 @@
                 <figure class="about-icon"><i class="fa fa-users fa-2x about-icon"></i></figure>
 
                 <div class="about-box" style="opacity: 1;">
-                    <h3>Safe</h3>
+                    <h3 data-i18n="app-info-bullet4-title">Embedded Consensus</h3>
 
-                    <p>Secured by cryptography.</p>
+                    <p data-i18n="app-info-bullet4-subtitle">Extended OP_RETURN 120 byte support</p>
+                </div>
+            </div>
+
+            <div class="grid-50 tablet-grid-100 mobile-grid-100 about-box" style="opacity: 1;">
+                <figure class="about-icon"><i class="fa fa-clock-o fa-2x about-icon"></i></figure>
+
+                <div class="about-box" style="opacity: 1;">
+                    <h3 data-i18n="app-info-bullet5-title">Locktime support</h3>
+
+                    <p data-i18n="app-info-bullet5-subtitle">Microtransactions & payment channels</p>
+                </div>
+            </div>
+
+            <div class="grid-50 tablet-grid-100 mobile-grid-100 about-box" style="opacity: 1;">
+                <figure class="about-icon"><i class="fa fa-gg-circle fa-2x about-icon"></i></figure>
+
+                <div class="about-box" style="opacity: 1;">
+                    <h3 data-i18n="app-info-bullet6-title">SegWit</h3>
+
+                    <p data-i18n="app-info-bullet6-subtitle">Fixing many issues from malleability all the way to scaling</p>
+                </div>
+            </div>
+
+            <div class="grid-50 tablet-grid-100 mobile-grid-100 about-box" style="opacity: 1;">
+                <figure class="about-icon"><i class="fa fa-bolt fa-2x about-icon"></i></figure>
+
+                <div class="about-box" style="opacity: 1;">
+                    <h3 data-i18n="app-info-bullet7-title">Lightning Network</h3>
+
+                    <p data-i18n="app-info-bullet7-subtitle">Off-chain layer 2 network. Instant transactions with payment channels.</p>
+                </div>
+            </div>
+
+
+            <div class="grid-50 tablet-grid-100 mobile-grid-100 about-box" style="opacity: 1;">
+                <figure class="about-icon"><i class="fa fa-chain fa-2x about-icon"></i></figure>
+
+                <div class="about-box" style="opacity: 1;">
+                    <h3 data-i18n="app-info-bullet8-title">Safe</h3>
+
+                    <p data-i18n="app-info-bullet8-subtitle">Secured by cryptography & scrypt merged mining</p>
                 </div>
             </div>
         </div>
-
-
     </section>
+
     <!-- close grid container -->
     <section
             class="parallax-section parallax-banner-2 parallax-background parallax-section-2 ha-waypoint fixed animated"
@@ -183,34 +248,12 @@
             <!-- parallax header -->
             <div class="grid-70 prefix-15 mobile-grid-100 tablet-grid-100">
                 <header class="parallax-header">
-                    <h2 class="parallax-title" style="opacity: 1;"><span>Get the latest news</span></h2>
+                    <h2 class="parallax-title" style="opacity: 1;"><span><a href="https://viacoin.org/roadmap" data-i18n="app-info-roadmap">Viacoin Roadmap 2017</a></span></h2>
 
-                    <p class="parallax-slogan" style="opacity: 1;">Sign up the the mailing list and keep in touch on Twitter</p>
+                    <p class="parallax-slogan" style="opacity: 1;">Sign up on the mailing list and keep in touch on Twitter</p>
 
                     <p>
 
-                    <form action="http://www.aweber.com/scripts/addlead.pl" role="form" class="col-lg-12 newsletter"
-                          method="post">
-                        <div style="display: none;">
-                            <input type="hidden" value="1989130388" name="meta_web_form_id">
-                            <input type="hidden" value="" name="meta_split_id">
-                            <input type="hidden" value="awlist3449525" name="listname">
-                            <input type="hidden" id="redirect_11abb3fc569e996344cdb85811224e0b"
-                                   value="http://viacoin.org/confirm.html" name="redirect">
-                            <input type="hidden" value="notification_list" name="meta_adtracking">
-                            <input type="hidden" value="1" name="meta_message">
-                            <input type="hidden" value="email" name="meta_required">
-                            <input type="hidden" value="" name="meta_tooltip">
-                        </div>
-
-                        <div style="width:340px;text-align:center;margin:0 auto;" class="input-group">
-                            <input type="text" placeholder="Enter your email address" value="" name="email"
-                                   title="We will not share your email with anyone." class="form-control input-lg">
-                            <span class="input-group-btn"><button name="submit" type="submit"
-                                                                  class="btn btn-lg btn-primary">OK
-                            </button></span>
-                        </div>
-                    </form>
                     </p>
                 </header>
             </div>
@@ -228,15 +271,15 @@
 
 <!-- portfolio section -->
 <div class="nav-waypoint">
-<section id="portfolio-section" class="portfolio-section content-section">
+<section id="download" class="download content-section">
     <div class="grid-container">
 
         <!-- section header -->
         <div class="grid-70 prefix-15 mobile-grid-100 tablet-grid-100">
             <header class="section-header">
-                <h2 class="section-title"><span>Wallets</span></h2>
+                <h2 class="section-title"><span data-i18n="">Wallets</span></h2>
 
-                <p class="section-slogan">Download the official reference implementation, after launch.</p>
+                <p class="section-slogan">Download the official wallet.</p>
             </header>
         </div>
         <!-- close section header -->
@@ -244,11 +287,24 @@
         <div class="clear"></div>
 
         <div class="grid-container">
-            <div class="grid-33 tablet-grid-100 mobile-grid-100">
-                <a href="https://github.com/viacoin/viacoin/releases/download/v0.10.3/viacoin-0.10.3-win32-setup.exe">
+                    <div class="grid-33 tablet-grid-100 mobile-grid-100">
+                <a href="https://github.com/viacoin/viacoin/releases/download/v0.13.3.7/viacoin-0.13.3-win64-setup-unsigned.exe" target="_blank">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <button class="btn btn-default">Windows</button>
+                            <button class="btn btn-default">Windows 64 bits</button>
+                        </div>
+                        <div class="panel-body ">
+                            <i class="fa fa-windows fa-5x"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="grid-33 tablet-grid-100 mobile-grid-100">
+                <a href="https://github.com/viacoin/viacoin/releases/download/v0.13.3.7/viacoin-0.13.3-win32-setup-unsigned.exe" target="_blank">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <button class="btn btn-default">Windows 32 bits</button>
                         </div>
                         <div class="panel-body ">
                             <i class="fa fa-windows fa-5x"></i>
@@ -257,7 +313,7 @@
                 </a>
             </div>
             <div class="grid-33 tablet-grid-100 mobile-grid-100">
-                <a href="https://github.com/viacoin/viacoin/releases/download/v0.10.3/Viacoin-Qt.dmg">
+                <a href="https://github.com/viacoin/viacoin/releases/download/v0.13.3.7/viacoin-0.13.3-osx-unsigned.dmg" target="_blank">
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <button class="btn btn-default">
@@ -271,7 +327,7 @@
                 </a>
             </div>
             <div class="grid-33 tablet-grid-100 mobile-grid-100">
-                <a href="https://github.com/viacoin/viacoin/releases/tag/v0.10.3" target="_blank">
+                <a href="https://github.com/viacoin/viacoin/releases" target="_blank">
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <button class="btn btn-default">
@@ -285,6 +341,50 @@
                 </a>
             </div>
 
+            <div class="grid-33 tablet-grid-100 mobile-grid-100">
+                <a href="http://108.61.216.160/cryptochainer.chains/chains/Viacoin_blockchain.zip" target="_blank">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <button class="btn btn-default">
+                                Bootstrap
+                            </button>
+                        </div>
+                        <div class="panel-body">
+                            <i class="fa fa-link fa-5x"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="grid-33 tablet-grid-100 mobile-grid-100">
+                <a href="https://www.ledgerwallet.com/" target="_blank">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <button class="btn btn-default">
+                                Ledger Nano S & Blue
+                            </button>
+                        </div>
+                        <div class="panel-body">
+                            <i class="fa fa-usb fa-5x"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="grid-33 tablet-grid-100 mobile-grid-100">
+                <a href="https://coinomi.com/" target="_blank">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <button class="btn btn-default">
+                                Coinomi
+                            </button>
+                        </div>
+                        <div class="panel-body">
+                            <i class="fa fa-mobile fa-5x"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
 
         <div class="clear"></div>
@@ -301,11 +401,11 @@
 
         <div class="clear"></div>
 
-        <div class="grid-33 tablet-grid-100 mobile-grid-100">
+        <div class="grid-50 tablet-grid-100 mobile-grid-100">
             <a href="http://vialectrum.org/" target="_blank">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <button class="btn btn-default">
+                        <button class="btn btn-default" data-i18n="app-wallet-electrum">
                             Vialectrum
                         </button>
                     </div>
@@ -316,11 +416,11 @@
             </a>
         </div>
 
-        <div class="grid-33 tablet-grid-100 mobile-grid-100">
+        <div class="grid-50 tablet-grid-100 mobile-grid-100">
             <a href="https://viacoin.github.io/address-generator/" target="_blank">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <button class="btn btn-default">
+                        <button class="btn btn-default" data-i18n="app-wallet-paper">
                             Viacoin Paper Wallet
                         </button>
                     </div>
@@ -330,7 +430,6 @@
                 </div>
             </a>
         </div>
-
 
     </div>
     <!-- close grid-container -->
@@ -357,28 +456,13 @@
                 </div>
                 <!-- close entry header -->
 
-                <!-- icon box 1 -->
-                <div class="grid-33 prefix-10 mobile-grid-100 tablet-grid-100">
-                    <a href="https://www.bittrex.com/Market/Index?MarketName=BTC-VIA">
-                        <div class="box-fade icon-box">
-                            <div class="arrow-right"></div>
-                            <i class="fa fa-bar-chart-o fa-4x"></i></div>
-                        <div class="box-fade info">
-                            <h3>Bittrex</h3>
-
-                            <p></p>
-                        </div>
-                    </a>
-                </div>
-                <!-- close icon box -->
-
                 <!-- icon box 2 -->
                 <div class="grid-33 prefix-10 mobile-grid-100 tablet-grid-100">
-                    <a href="https://poloniex.com/exchange/btc_via">
-                        <div class="box-fade icon-box">
-                            <div class="arrow-right"></div>
-                            <i class="fa fa-building fa-4x"></i></div>
-                        <div class="box-fade info">
+                    <a href="https://poloniex.com/exchange/btc_via" target="_blank">
+                        <div class="box-fade box">
+                            <img src="img/poloniex.png" class="img-rounded" alt="Poloniex" width="304" height="400"></div>
+                            <div class="box-fade info">
+                            <br><br>
                             <h3>Poloniex</h3>
 
                             <p></p>
@@ -387,50 +471,20 @@
                 </div>
                 <!-- close icon box -->
 
-                <!-- icon box 2 -->
+                <!-- icon box 1 -->
                 <div class="grid-33 prefix-10 mobile-grid-100 tablet-grid-100">
-                    <a href="https://www.swisscex.com/market/VIA_BTC">
-                        <div class="box-fade icon-box">
-                            <div class="arrow-right"></div>
-                            <i class="fa fa-signal fa-4x"></i></div>
-                        <div class="box-fade info">
-                            <h3>Swisscex</h3>
+                    <a href="https://www.bittrex.com/Market/Index?MarketName=BTC-VIA" target="_blank">
+                        <div class="box-fade box">
+                            <img src="img/trex.png" class="img-rounded" alt="Bittrex" width="304" height="400"></div>
+                            <div class="box-fade info">
+                            <br></br>
+                            <h3>Bittrex</h3>
 
                             <p></p>
                         </div>
                     </a>
                 </div>
                 <!-- close icon box -->
-
-                <!-- icon box 2 -->
-                <div class="grid-33 prefix-10 mobile-grid-100 tablet-grid-100">
-                    <a href="https://bter.com/trade/via_btc">
-                        <div class="box-fade icon-box">
-                            <div class="arrow-right"></div>
-                            <i class="fa fa-institution fa-4x"></i></div>
-                        <div class="box-fade info">
-                            <h3>BTER</h3>
-
-                            <p></p>
-                        </div>
-                    </a>
-                </div>
-                <!-- close icon box -->
-
-                <!-- additional exchange list -->
-                <div class="grid-66 prefix-10 mobile-grid-100 tablet-grid-100">
-                        <div class="box-fade info" style="opacity: 1;">
-                            <h3>Additional Exchanges</h3>
-                            <h3 id="other-exchanges">
-                                <a href="https://www.cryptsy.com/markets/view/261">Cryptsy</a> - 
-                                <a href="https://www.atomic-trade.com/markets">AtomicTrade</a> - 
-                                <a href="https://lazycoins.com/trade#via-btc">LazyCoins</a>
-                            </h3>
-                            <p></p>
-                        </div>
-                    </a>
-                </div>
-                <!--close additional exchange list -->
 
             </div>
             <!-- close grid-100 -->
@@ -459,190 +513,70 @@
 
             <div class="grid-100 prefix-pools mobile-grid-100 tablet-grid-100">
                 <div class="grid-container">
-                    <span class="btn-holder"><a id="view-pools-button" class="hero-btn"><i class="fa fa-arrow-circle-down fa-lg"></i> View the Pools</a></span>
-
                 </div>
             </div>
 
 
 
-            <div id="pools-list" style="display: none;">
-                <div class="member-box grid-25 mobile-grid-100 tablet-grid-50 top-90">
-                    <a href="http://via.1gh.com/" target="_blank">
-                        <figure class="member-photo"><img src="images/pools/1gh.png" alt="member"></figure>
-                        
-                        <div class="member-box">
-                            <h3>1GH</h3>
-                            <span>via.1gh.com</span>
-                        </div>
-                    </a>
-                </div>
+            <div id="pools-list">
 
                 <div class="member-box grid-25 mobile-grid-100 tablet-grid-50 top-90">
-                    <a href="https://www.minep.it/pool/via/" target="_blank">
-                        <figure class="member-photo"><img src="images/pools/minep-it.png" alt="member"></figure>
-                        
-                        <div class="member-box">
-                            <h3>Minep.it</h3>
-                            <span>minep.it/pool/via/</span>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="member-box grid-25 mobile-grid-100 tablet-grid-50 top-90">
-                    <a href="http://via.minerpools.com/" target="_blank">
+                    <a href="https://www.f2pool.com/" target="_blank">
                         <figure class="member-photo"><i class="fa fa-sitemap fa-4x"></i></figure>
                         
                         <div class="member-box">
-                            <h3>Minerpools</h3>
-                            <span>via.minerpools.com</span>
+                            <h3>F2pool</h3>
+                            <span>f2pool.com</span>
                         </div>
                     </a>
                 </div>
 
-                <!--<div class="member-box grid-25 mobile-grid-100 tablet-grid-50 top-90">-->
-                <!--    <a href="http://via.pool.mn/" target="_blank">-->
-                <!--        <figure class="member-photo"><img src="images/pools/pool-mn.png" alt="member"></figure>-->
-                        
-                <!--        <div class="member-box">-->
-                <!--            <h3>Pool.mn</h3>-->
-                <!--            <span>via.pool.mn</span>-->
-                <!--        </div>-->
-                <!--    </a>-->
-                <!--</div>-->
 
                 <div class="member-box grid-25 mobile-grid-100 tablet-grid-50 top-90">
-                    <a href="http://via.oominoo.com/" target="_blank">
+                    <a href="https://coinking.io/" target="_blank">
+                        <figure class="member-photo"><i class="fa fa-sitemap fa-4x"></i></figure>
+                        
+                        <div class="member-box">
+                            <h3>Coin King</h3>
+                            <span>coinking.io</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="member-box grid-25 mobile-grid-100 tablet-grid-50 top-90">
+                    <a href="http://multipool.us/" target="_blank">
+                        <figure class="member-photo"><i class="fa fa-sitemap fa-4x"></i></figure>
+                        
+                        <div class="member-box">
+                            <h3>Multipool</h3>
+                            <span>multipool.us</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="member-box grid-25 mobile-grid-100 tablet-grid-50 top-90">
+                    <a href="https://www.litecoinpool.org/" target="_blank">
                         <figure class="member-photo"><img src="images/pools/nomp.svg" alt="member"></figure>
                         
                         <div class="member-box">
-                            <h3>Oominoo</h3>
-                            <span>via.oominoo.com</span>
+                            <h3>Litecoinpool</h3>
+                            <span>www.litecoinpool.org</span>
                         </div>
                     </a>
                 </div>
 
                 <div class="member-box grid-25 mobile-grid-100 tablet-grid-50 top-90">
-                    <a href="http://via.hashlink.eu/" target="_blank">
-                        <figure class="member-photo"><i class="fa fa-sitemap fa-4x"></i></figure>
+                    <a href="https://ipominer.com/" target="_blank">
+                        <figure class="member-photo"><img src="images/pools/nomp.svg" alt="member"></figure>
                         
                         <div class="member-box">
-                            <h3>Hashlink</h3>
-                            <span>via.hashlink.eu</span>
+                            <h3>IpoMiner</h3>
+                            <span>ipominer.com</span>
                         </div>
                     </a>
                 </div>
 
-                <!--<div class="member-box grid-25 mobile-grid-100 tablet-grid-50 top-90">-->
-                <!--    <a href="http://lightninghash.com/" target="_blank">-->
-                <!--        <figure class="member-photo"><img src="images/pools/lightninghash.png" alt="member"></figure>-->
-                        
-                <!--        <div class="member-box">-->
-                <!--            <h3>LightningHash</h3>-->
-                <!--            <span>lightninghash.com</span>-->
-                <!--        </div>-->
-                <!--    </a>-->
-                <!--</div>-->
-
-                <div class="member-box grid-25 mobile-grid-100 tablet-grid-50 top-90">
-                    <a href="http://xhash.net/" target="_blank">
-                        <figure class="member-photo"><img src="images/pools/xhash.png" alt="member"></figure>
-                        
-                        <div class="member-box">
-                            <h3>XHash</h3>
-                            <span>xhash.net</span>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="member-box grid-25 mobile-grid-100 tablet-grid-50 top-90">
-                    <a href="http://via.poolerrangers.com/" target="_blank">
-                        <figure class="member-photo"><i class="fa fa-sitemap fa-4x"></i></figure>
-                        
-                        <div class="member-box">
-                            <h3>PowerRangers</h3>
-                            <span>via.poolerrangers.com</span>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="member-box grid-25 mobile-grid-100 tablet-grid-50 top-90">
-                    <a href="http://suchpool.pw/via" target="_blank">
-                        <figure class="member-photo"><img src="images/pools/suchpool.png" alt="member"></figure>
-                        
-                        <div class="member-box">
-                            <h3>SuchPool</h3>
-                            <span>suchpool.pw/via</span>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="member-box grid-25 mobile-grid-100 tablet-grid-50 top-90">
-                    <a href="http://via.hashhot.com/" target="_blank">
-                        <figure class="member-photo"><i class="fa fa-sitemap fa-4x"></i></figure>
-                        
-                        <div class="member-box">
-                            <h3>HashHot</h3>
-                            <span>via.hashhot.com</span>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="member-box grid-25 mobile-grid-100 tablet-grid-50 top-90">
-                    <a href="http://via.altmine.net/" target="_blank">
-                        <figure class="member-photo"><i class="fa fa-sitemap fa-4x"></i></figure>
-                        
-                        <div class="member-box">
-                            <h3>AltMine</h3>
-                            <span>via.altmine.net</span>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="member-box grid-25 mobile-grid-100 tablet-grid-50 top-90">
-                    <a href="http://pool.manhattanmine.com/" target="_blank">
-                        <figure class="member-photo"><img src="images/pools/manhattanmine.jpg" alt="member"></figure>
-                        
-                        <div class="member-box">
-                            <h3>ManhattanMine</h3>
-                            <span>pool.manhattanmine.com</span>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="member-box grid-25 mobile-grid-100 tablet-grid-50 top-90">
-                    <a href="http://via.theblocksfactory.com/" target="_blank">
-                        <figure class="member-photo"><i class="fa fa-sitemap fa-4x"></i></figure>
-                        
-                        <div class="member-box">
-                            <h3>TheBlocksFactory</h3>
-                            <span>via.theblocksfactory.com</span>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="member-box grid-25 mobile-grid-100 tablet-grid-50 top-90">
-                    <a href="http://hashing.in/" target="_blank">
-                        <figure class="member-photo"><i class="fa fa-sitemap fa-4x"></i></figure>
-                        
-                        <div class="member-box">
-                            <h3>Hashing.in</h3>
-                            <span>hashing.in</span>
-                        </div>
-                    </a>
-                </div>
                 
-                <div class="member-box grid-25 mobile-grid-100 tablet-grid-50 top-90">
-                    <a href="http://fastminer.org/" target="_blank">
-                        <figure class="member-photo"><i class="fa fa-sitemap fa-4x"></i></figure>
-                        
-                        <div class="member-box">
-                            <h3>Fastminer.org</h3>
-                            <span>fastminer.org</span>
-                        </div>
-                    </a>
-                </div>
-
             </div>
 
         </div>
@@ -655,7 +589,7 @@
             <!-- section header -->
             <div class="grid-100 prefix-0 mobile-grid-100 tablet-grid-100">
                 <header class="section-header">
-                    <h2 class="section-title"><span>Resources</span></h2>
+                    <h2 class="section-title"><span data-i18n="app-resources-title">Resources</span></h2>
 
                     <p class="section-slogan">Viacoin Resources are listed below</p>
                 </header>
@@ -669,68 +603,31 @@
                 <figure class="member-photo"><i class="fa fa-link fa-4x"></i></figure>
 
                 <div class="member-box">
-                    <h3>Block Explorers</h3>
+                    <h3>Block Explorer</h3>
                     <span></span>
-                    <span><a href="http://explorer.viacoin.org">explorer.viacoin.org</a></span>
-                    <span><a href="http://viacoinexplorer.com">viacoinexplorer.com</a></span>
+                    <span><a href="https://chainz.cryptoid.info/via/" target="_blank">chainz.cryptoid.info/via/</a></span>
                 </div>
 
             </div>
 
 
-            <!--
-            <div class="member-box grid-25 mobile-grid-100 tablet-grid-50">
-                <a href="https://bitcointalk.org/index.php?topic=699278">
-                <figure class="member-photo"><i class="fa fa-sitemap fa-4x"></i></figure>
-
-                <div class="member-box">
-                    <h3>Pool List</h3>
-                    <span>See Bitcointalk thread</span>
-                </div>
-                </a>
-            </div>
-            -->
-
-
-            <div class="member-box grid-50 mobile-grid-100 tablet-grid-50">
-                <a href="http://blog.viacoin.org">
-                <figure class="member-photo"><i class="fa fa-pencil fa-4x"></i></figure>
-
-                <div class="member-box">
-                    <h3>Blog</h3>
-                    <span>Keep up to date</span>
-                </div>
-                </a>
-            </div>
 
             <div class="clear"></div>
 
 
-            <div class="member-box grid-50 mobile-grid-100 tablet-grid-50">
+            <!-- div class="member-box grid-50 mobile-grid-100 tablet-grid-50">
 
                 <figure class="member-photo"><i class="fa fa-gift fa-4x"></i></figure>
 
                 <div class="member-box">
                     <h3>Faucets</h3>
                     <span></span>
+                    <span><a href="http://cryptogator.net/viacoin-faucet">Mainnet Faucet</a></span>
                     <span><a href="http://viacoin.coinlabs.org/testnetfaucet/">Testnet faucet</a></span>
                 </div>
                 
-            </div>
+            </div -->
 
-
-            <div class="member-box grid-50 mobile-grid-100 tablet-grid-50">
-
-                <figure class="member-photo"><i class="fa fa-heart fa-4x"></i></figure>
-
-                <div class="member-box">
-                    <h3>Tipbots</h3>
-                    <span></span>
-                    <span><a href="https://viacoin.coinlabs.org/twitter/">Twitter</a></span>
-                    <span><a href="http://www.reddit.com/r/tipvrc/wiki/index">Reddit</a></span>
-                </div>
-
-            </div>
 
             <div class="clear"></div>
 
@@ -741,8 +638,13 @@
                 <div class="member-box" style="opacity: 1;">
                     <h3>Services</h3>
                     <span></span>
-                    <span><a href="http://www.litepaid.com/">Litepaid - payment processing</a></span>
-                    <span><a href="http://www.pock.io">Pock.io - gift cards</a></span>
+                    <span><a href="https://www.litebit.eu/en/buy/viacoin" target="_blank">Buy viacoins directly on litebit.eu</a></span>
+                    <span>Payment options: iDeal, Sepa Bankwire,CryptoCurrency, Credits, SOFORT,
+                        Giropay, BanContact & MyBank</span>  
+                    <span><a href="https://www.litepaid.com/" target="_blank">Litepaid - payment processing</a></span>
+                    <a href="https://www.litebit.eu/en/buy/viacoin" target="_blank">
+                        <img src="https://www.litebit.eu/images/banners/litebit_transparent1.png">
+                    </a>
                 </div>
 
             </div>
@@ -763,11 +665,11 @@
             <div class="grid-parent grid-100 mobile-grid-100 tablet-grid-100">
 
                 <!-- parallax header -->
-                <div class="grid-75 prefix-10 mobile-grid-100 tablet-grid-100">
+                <div class="grid-70 prefix-15 mobile-grid-100 tablet-grid-100">
                     <header class="parallax-header">
-                        <h2 class="parallax-title"><span>Community</span></h2>
+                        <h2 class="parallax-title"><span data-i18n="app-community-title">Community</span></h2>
 
-                        <p class="parallax-slogan">Be social, keep up to date</p>
+                        <p class="parallax-slogan" data-i18n="app-community-subtitle">Be social, keep up to date</p>
                     </header>
                 </div>
                 <!-- close parallax header -->
@@ -777,53 +679,36 @@
                 <!-- social network -->
                 <ul class="social-network">
 
-                    <li class="twitter grid-15 tablet-grid-10 mobile-grid-50">
+                    <li class="twitter grid-25 tablet-grid-10 mobile-grid-50">
                         <a class="social-link" href="https://twitter.com/viacoin" target="_blank">
                             <span class="social-icon"><i class="fa fa-twitter fa-4x"></i></span>
 
-                            <h3 class="social-title">Twitter</h3>
-                            <span class="social-info">Get the Latest News</span>
+                            <h3 class="social-title" data-i18n="app-community-twitter">Twitter</h3>
+                            <span class="social-info" data-i18n="app-community-twitter-subtitle">Get the latest news</span>
                         </a>
                     </li>
-                    <li class="facebook grid-15 tablet-grid-10 mobile-grid-50">
-                        <a class="social-link" href="https://www.facebook.com/viacoin" target="_blank">
-                            <span class="social-icon"><i class="fa fa-facebook fa-4x"></i></span>
+                    <li class="instagram grid-25 tablet-grid-10 mobile-grid-50">
+                        <a class="social-link" href="http://www.reddit.com/r/viacoin" target="_blank">
+                            <span class="social-icon"><i class="fa fa-reddit fa-4x"></i></span>
 
-                            <h3 class="social-title">Facebook</h3>
-                            <span class="social-info">Join the Conversation</span>
+                            <h3 class="social-title" data-i18n="app-community-reddit">Reddit</h3>
+                            <span class="social-info" data-i18n="app-community-reddit-subtitle">Latest threads</span>
                         </a>
                     </li>
-                    <li class="youtube grid-15 tablet-grid-10 mobile-grid-50">
-                        <a class="social-link" href="https://www.youtube.com/channel/UCPpiz6Q7xOYyyjXys9u7tlg"
-                           target="_blank">
-                            <span class="social-icon"><i class="fa fa-youtube fa-4x"></i></span>
-
-                            <h3 class="social-title">YouTube</h3>
-                            <span class="social-info">View Exclusive Videos</span>
-                        </a>
-                    </li>
-                    <li class="instagram grid-15 tablet-grid-10 mobile-grid-50">
-                        <a class="social-link" href="https://bitcointalk.org/index.php?topic=699278" target="_blank">
-                            <span class="social-icon"><i class="fa fa-btc fa-4x"></i></span>
-
-                            <h3 class="social-title">Bitcointalk</h3>
-                            <span class="social-info">Latest Posts</span>
-                        </a>
-                    </li>
-                    <li class="instagram grid-15 tablet-grid-10 mobile-grid-50">
+                    <li class="instagram grid-25 tablet-grid-10 mobile-grid-50">
                         <a class="social-link" href="https://github.com/viacoin/viacoin" target="_blank">
                             <span class="social-icon"><i class="fa fa-github fa-4x"></i></span>
 
                             <h3 class="social-title">Github</h3>
-                            <span class="social-info">Latest Commits</span>
+                            <span class="social-info" data-i18n="app-community-github-subtitle">Code repository</span>
                         </a>
                     </li>
-                    <li class="instagram grid-15 tablet-grid-10 mobile-grid-50">
-                        <a class="social-link" href="http://www.reddit.com/r/viacoin" target="_blank">
-                            <span class="social-icon"><i class="fa fa-reddit fa-4x"></i></span>
+                    <li class="instagram grid-25 tablet-grid-10 mobile-grid-50">
+                        <a class="social-link" href="https://telegram.me/viacoin" target="_blank">
+                            <span class="social-icon"><i class="fa fa-comments-o fa-4x"></i></span>
 
-                            <h3 class="social-title">Reddit</h3>
-                            <span class="social-info">Latest Threads</span>
+                            <h3 class="social-title">Telegram</h3>
+                            <span class="social-info" data-i18n="app-community-telegram-subtitle">Telegram chat</span>
                         </a>
                     </li>
                 </ul>
@@ -850,7 +735,7 @@
 
         <div class="client-holder grid-parent grid-100 tablet-grid-100 mobile-grid-100">
 
-            <h2 class="section-title slogan" style="opacity: 1;"><span>The Future of Digital Currency.</span></h2>
+            <h2 class="section-title slogan" style="opacity: 1;"><span data-i18n="app-slogan1">The Future of Digital Currency.</span></h2>
 
         </div>
         <!-- close client box -->
@@ -878,7 +763,7 @@
             <!-- parallax header -->
             <div class="grid-70 prefix-15 mobile-grid-100 tablet-grid-100">
                 <header class="parallax-header">
-                    <h2 class="parallax-title"><span>Contact us</span></h2>
+                    <h2 class="parallax-title"><span data-i18n="app-contact">Contact us</span></h2>
 			<p>
                info<span style="display:none"></span>@viacoin.org
                     <p class="parallax-slogan">Viacoin is an open-source Bitcoin blockchain based open-source project that integrates ClearingHouse. ClearingHouse is a protocol that allows for asset issuance and p2p trading on the Viacoin blockchain. Get involved on Github!</p>
@@ -915,8 +800,8 @@
 
     <div class="grid-container">
         <div class="grid-100 mobile-grid-100 tablet-grid-100">
-            <h3>We <i class="fa fa-heart" style="color:#1F74AE;"></i> Viacoin!</h3>
-            <span class="copyright">&copy; 2014 Viacoin. All rights reserved.</span>
+            <h3><span data-i18n="app-footer-we">We</span> <i class="fa fa-heart" style="color:#1F74AE;"></i> <span data-i18n="app-name">Viacoin</span>!</h3>
+            <span class="copyright">&copy; 2017 Viacoin. All rights reserved.</span>
 
         </div>
     </div>
@@ -932,6 +817,25 @@
     <script src="js/waypoints.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/jquery.custom.js"></script>
-    <script src="js/ga.js"></script>
+
+<script type="text/javascript">
+    adroll_adv_id = "RX67YKH5P5COJKGW6M5JSC";
+    adroll_pix_id = "QEXBZZVDIFE2TBNKKNA5HI";
+    (function () {
+        var _onload = function(){
+            if (document.readyState && !/loaded|complete/.test(document.readyState)){setTimeout(_onload, 10);return}
+            if (!window.__adroll_loaded){__adroll_loaded=true;setTimeout(_onload, 50);return}
+            var scr = document.createElement("script");
+            var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
+            scr.setAttribute('async', 'true');
+            scr.type = "text/javascript";
+            scr.src = host + "/j/roundtrip.js";
+            ((document.getElementsByTagName('head') || [null])[0] ||
+                document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
+        };
+        if (window.addEventListener) {window.addEventListener('load', _onload, false);}
+        else {window.attachEvent('onload', _onload)}
+    }());
+</script>
 </body>
 </html>
